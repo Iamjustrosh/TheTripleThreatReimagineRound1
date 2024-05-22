@@ -1,5 +1,5 @@
 var h1 = document.querySelector("h1");
-var text = "FORD";
+var text = "Ford";
 var arr = text.split("");
 
 function generateText(text) {
