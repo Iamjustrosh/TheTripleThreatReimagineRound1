@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
     <title>Ford | TheTripleThreat | Reimagine</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="splashScreen">
-        <h1 class="min"></h1>
-        <span id="copyright">By - The Triple Threat</span>
+
+
+    <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
+        <h1 class="min text-[10em] absolute l-1/2 t-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
+        <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
     </div>
-    <div class="container">
-        <div class="navbar" ></div>
-        <div class="heroSection">
-            <div class="background">
-                <img class="img" src="./images/bg.png" alt="">
+    <div class="wrapper w-screen h-screen overflow-x-hidden">
+        <div class="navbar flex justify-center items-center h-20 w-full bg-red-500 text-lg text-white">
+            <i class="ri-user-fill"></i>
+            <i class="ri-global-fill"></i>
+            <i class="ri-search-line"></i>
+        </div>
+        <div class="heroSection relative ">
+            <div class="heroBg w-screen h-screen absolute">
+                <img id="img" class="w-full h-full object-cover " src="./images/bg.png" alt="">
             </div>
-            <div class="heroCar"><img src="./images/heroCar.png" alt=""></div>
+            <div class="heroCar absolute w-fit ">
+                <img id="car" class="w-[60%] " src="./images/heroCar.png" alt="">
+            </div>
             <div class="callToAction"></div>
         </div>
     </div>
@@ -28,7 +39,8 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
