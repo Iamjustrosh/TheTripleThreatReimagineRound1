@@ -14,17 +14,17 @@
 <body>
 
 
-    <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
-        <h1 class="min text-[10em] absolute l-1/2 t-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
+    <!-- <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
+        <h1 class="min text-[10em] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
-    </div>
+    </div> -->
     <div class="wrapper w-screen h-screen overflow-x-hidden">
-        <div class="navbar flex justify-center items-center h-20 w-full bg-red-500 text-lg text-white">
+        <div class="navbar gap-5 flex justify-center items-center h-20 w-full bg-red-500 text-lg text-white">
             <i class="ri-user-fill"></i>
             <i class="ri-global-fill"></i>
             <i class="ri-search-line"></i>
         </div>
-        <div class="heroSection relative ">
+        <div class="heroSection relative flex">
             <div class="heroBg w-screen h-screen absolute">
                 <img id="img" class="w-full h-full object-cover " src="./images/bg.png" alt="">
             </div>
@@ -32,6 +32,15 @@
                 <img id="car" class="w-[60%] " src="./images/heroCar.png" alt="">
             </div>
             <div class="callToAction"></div>
+            <div class="scrDw w-screen h-screen flex" >
+            <div class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-24 w-24 h-24 ">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/843d6dd5-c7b3-41cf-8e7f-97cc4ccae5d0/YCrOp0GNjk.json"
+                    background="transparent" speed="1"  loop
+                    autoplay></dotlottie-player></iframe>
+                </div>  
+            </div>
         </div>
     </div>
 
