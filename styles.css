@@ -39,6 +39,10 @@ body {
     height: 100%;
     width: 100%;
 }
+body[theme="black"]{
+    background-color: black;
+    color: white;
+}
 
 .splashScreen {
     /* display: flex;
@@ -104,6 +108,14 @@ body {
 .splashScreen h1 span {
     display: inline-block;
 }
+
+
+
+.navbar{
+    background-color: #333;
+    position: ;
+}
+
 /* 
 .container {
     height: 100vh;
