@@ -166,7 +166,6 @@ body[theme="black"]{
     /* background: #ffffff; */
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
     border-radius: 20px;
     color: rgb(255, 255, 255);
 }
@@ -189,7 +188,6 @@ body[theme="black"]{
     /* background: #fff; */
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
     border-radius: 20px;
     color: white;
 }
