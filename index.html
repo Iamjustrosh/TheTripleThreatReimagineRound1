@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
-    <title>Ford | TheTripleThreat | Reimagine</title>
+    <title>Ford® - New Hybrid &amp; Electric Vehicles, SUVs, Crossovers, Trucks, Vans &amp; Carsv</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body theme="black">
-
-
-    <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
-        <h1 class="min text-[10em] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
+<body class="select-none" theme="black">
+    <div id="cursor"
+        class="w-4 h-4 rounded-full flex justify-center items-center bg-[#ff9c9c93] text-[.25rem] z-[10] fixed ">
+    </div>
+    <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-40 fixed text-white">
+        <h1 class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
     </div>
-    <div class="wrapper w-screen h-screen overflow-x-hidden">
+    <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
+
         <div class="navbar gap-5 flex justify-center items-center h-20 w-full bg-red-500 text-lg text-white">
             <i class="ri-user-fill"></i>
             <i class="ri-global-fill"></i>
@@ -29,22 +31,35 @@
                 <img id="img" class="w-full h-full object-cover " src="./images/bg.png" alt="">
             </div>
             <div class="heroCar absolute w-fit h-full">
-                <img id="car" class="min-w-96 w-[45%] relative left-1/2 top-[40%]" src="./images/heroCar.png" alt="">
+                <div class="relative min-w-96 w-[45%] z-[8] left-1/2 top-[40%]">
+                <!-- <div class="overlay bg-[#ffffff63] w-full h-full absolute z-[9]"></div>     -->
+                <a href="#carSection"><img id="car" src="./images/heroCar.png "
+                    alt=""></a>
+                </div>
             </div>
+
+            <!-- <h1 class="heroTxt z-[7] absolute  md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 uppercase text-[0px] lg:text-[10rem] xl:text-[12rem] w-full "></h1> -->
+            <h1 class="heroTxt  z-[7] absolute flex justify-center top-60 uppercase text-[0px] lg:text-[10rem]  xl:text-[16rem] 2xl:text-[19rem] w-full h-full"></h1>
             <div class="callToAction"></div>
-            <div class="scrDw w-screen h-screen flex" >
-            <div class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-20 w-24 h-24 ">
-                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-                    type="module"></script>
-                <dotlottie-player src="https://lottie.host/843d6dd5-c7b3-41cf-8e7f-97cc4ccae5d0/YCrOp0GNjk.json"
-                    background="transparent" speed="1"  loop
-                    autoplay></dotlottie-player></iframe>
-                </div>  
-            </div>  
+            <div class="scrlDwn w-screen h-screen flex">
+                <div title="Scroll Down" class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-20 w-24 h-24 ">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                        type="module"></script>
+                    <dotlottie-player src="https://lottie.host/843d6dd5-c7b3-41cf-8e7f-97cc4ccae5d0/YCrOp0GNjk.json"
+                        background="transparent" speed="1" loop autoplay></dotlottie-player></iframe>
+                </div>
+            </div>
         </div>
 
-        <div class="powerSection w-full h-[600px]">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fugit enim ipsam suscipit maiores porro, cupiditate facilis similique alias architecto voluptatum. Ullam saepe expedita libero fuga possimus deserunt perferendis ad obcaecati beatae quibusdam odio molestias ea eligendi rerum ducimus, alias dignissimos! Placeat, id expedita quo totam mollitia maxime illo fugit sint accusantium ipsa unde ut voluptas odit voluptatum doloremque porro at. Laboriosam eaque quod sequi? Aperiam quod assumenda, asperiores alias amet et optio eos repellat voluptatibus sapiente sint quidem soluta laborum illum tenetur! Facere ea minima magni sapiente obcaecati, voluptate sequi molestiae rem, aspernatur sed id voluptatum nostrum, dolores sit.</p>
+        <div id="carSection" class="powerSection w-full h-screen">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fugit enim ipsam suscipit maiores porro,
+                cupiditate facilis similique alias architecto voluptatum. Ullam saepe expedita libero fuga possimus
+                deserunt perferendis ad obcaecati beatae quibusdam odio molestias ea eligendi rerum ducimus, alias
+                dignissimos! Placeat, id expedita quo totam mollitia maxime illo fugit sint accusantium ipsa unde ut
+                voluptas odit voluptatum doloremque porro at. Laboriosam eaque quod sequi? Aperiam quod assumenda,
+                asperiores alias amet et optio eos repellat voluptatibus sapiente sint quidem soluta laborum illum
+                tenetur! Facere ea minima magni sapiente obcaecati, voluptate sequi molestiae rem, aspernatur sed id
+                voluptatum nostrum, dolores sit.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="footersection">
@@ -53,14 +68,24 @@
             <div class="underFooter"></div>
             <div class="underFooter"></div>
         </div>
+
+
+
+
+
     </div>
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+<!-- sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } -->
