@@ -20,3 +20,8 @@ gsap.from(".char", {
   ease: "ease-in",
   duration: 1,
 });
+
+let search = document.getElementById("search")
+search.addEventListener(click, () =>{
+  
+})
