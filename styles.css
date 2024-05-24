@@ -125,6 +125,108 @@ body[theme="white"]{
     display: inline-block;
 }
 
+.navbar{
+    background-color: transparent;
+    position: sticky;
+    z-index: 2;
+    padding: 1.2px 2%;
+}
+.left{
+    width: 10;
+}
+
+.left img{
+    width: 20%;
+    height: auto ;
+}
+
+.center{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.center a{
+    color: white;
+    margin: 1.2em;
+    text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;
+    text-underline-offset: 25px;     
+}
+
+.center a:hover{
+    text-decoration: underline;
+}
+
+.right{
+    display: flex;
+    justify-content: right;
+    margin: 0 10%;
+    align-items: center;
+}
+
+.right i{
+    margin: 0 0.2em;
+    text-underline-offset: 25px;   
+    text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;        
+}
+
+.right i:hover{
+    text-decoration: underline;
+}
+.selectBox{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    /* background: #ffffff; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.selectBox select{
+    width: 15px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    color: black;
+}
+
+.searchBox{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    /* background: #fff; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.searchBox:hover{
+    background-color: #fff;
+    color: black;
+}
+.searchBox:hover input{
+    width: 10em;
+}
+
+.searchBox input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+
+
 
 .heroTxt {
     font-family: "Montserrat", Helvetica, sans-serif ;
