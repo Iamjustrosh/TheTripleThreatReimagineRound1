@@ -47,14 +47,12 @@ function cursor(){
 
   var mustang = document.querySelector("#car");
   mustang.addEventListener("mouseenter",function(){
-    cursor.innerHTML ="Explore";
     gsap.to(cursor,{
       scale: "4",
       backgroundColor: "#f35f5fd8 "
     })
   })
   mustang.addEventListener("mouseleave",function(){
-    cursor.innerHTML =""
     gsap.to(cursor,{
       scale: "1",
       backgroundColor: "#ffffff93"

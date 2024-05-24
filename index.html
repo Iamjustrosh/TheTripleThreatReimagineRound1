@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="select-none" theme="black">
+<body class="select-none" theme="white">
     <div id="cursor"
-        class="w-4 h-4 rounded-full flex justify-center items-center bg-[#ff9c9c93] text-[.25rem] z-[10] fixed ">
+        class="w-4 h-4 rounded-full flex justify-center items-center bg-[#ff9c9c93] z-[3] text-[.25rem] fixed ">
     </div>
-    <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-40 fixed text-white">
+    <div class="splashScreen hidden flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
         <h1 class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
     </div>
@@ -31,15 +31,15 @@
                 <img id="img" class="w-full h-full object-cover " src="./images/bg.png" alt="">
             </div>
             <div class="heroCar absolute w-fit h-full">
-                <div class="relative min-w-96 w-[45%] z-[8] left-1/2 top-[40%]">
-                <!-- <div class="overlay bg-[#ffffff63] w-full h-full absolute z-[9]"></div>     -->
-                <a href="#carSection"><img id="car" src="./images/heroCar.png "
+                <div class="relative  z-[2]   min-w-96 w-[45%] left-1/2 top-[40%]">
+                <!-- <div class="overlay z-[4] bg-[#ffffff63] absolute "></div>     -->
+                <a href="#carSection"><img id="car" class=""  src="./images/heroCar.png "
                     alt=""></a>
                 </div>
             </div>
 
             <!-- <h1 class="heroTxt z-[7] absolute  md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 uppercase text-[0px] lg:text-[10rem] xl:text-[12rem] w-full "></h1> -->
-            <h1 class="heroTxt  z-[7] absolute flex justify-center top-60 uppercase text-[0px] lg:text-[10rem]  xl:text-[16rem] 2xl:text-[19rem] w-full h-full"></h1>
+            <h1 class="heroTxt absolute flex justify-center top-60 uppercase text-[0px] lg:text-[10rem]  xl:text-[16rem] 2xl:text-[19rem] w-full h-full z-[1]"></h1>
             <div class="callToAction"></div>
             <div class="scrlDwn w-screen h-screen flex">
                 <div title="Scroll Down" class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-20 w-24 h-24 ">
