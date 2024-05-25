@@ -11,24 +11,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body theme="black">
+<body style="user-select: none;" theme="black">
 
+
+    <div id="cursor"
+        class="hidden w-4 h-4 rounded-full sm:flex justify-center items-center bg-[#ffffff93] z-[3] text-[.25rem] fixed pointer-events-none ">
+    </div>
 
     <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
-        <h1 class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
-         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
-     </div>
-     <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
-        <div class="navbar gap-2 flex justify-between items-center h-20 w-full bg-transparent text-lg text-white">
+        <h1
+            class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white ">
+        </h1>
+        <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
+    </div>
+    <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
+        <div
+            class="navbar z-[5] gap-2 flex justify-between items-center h-20 w-full bg-transparent text-lg text-white fixed">
             <div class="left">
-                <a href="#heroSection"><img src="./assets/Ford .png" alt=""></a>
+                <a href="#heroSection" class=""><img src="./assets/Ford .png" alt=""></a>
             </div>
             <div class="center">
                 <a href="">Vehicles</a>
                 <a href="">Shop</a>
                 <a href="">Support & Services</a>
             </div>
-            <div class="right"> 
+            <div class="right">
                 <i class="ri-user-fill"></i>
                 <div class="selectBox">
                     <select form="selectBox" name="selectBox" id="language">
@@ -37,35 +44,39 @@
                         <option value="">Tamil</option>
                     </select>
                     <a href="#">
-                        <i class="ri-global-fill"></i> 
-                    </a> 
+                        <i class="ri-global-fill"></i>
+                    </a>
                 </div>
 
                 <div class="searchBox">
                     <input type="text" placeholder="Search Your Vehicle">
                     <a href="#">
                         <i class="searchbtn ri-search-line"></i>
-                    </a> 
+                    </a>
                 </div>
             </div>
         </div>
         <div id="herosection" class="heroSection relative flex">
-            <div class="heroBg w-screen h-screen absolute">
-                <img id="img" class="w-full h-full object-cover " src="./images/bg.png" alt="">
+            <div class="heroBg  w-screen h-screen absolute">
+                <img id="img" class="opacity-0 sm:opacity-100 w-full h-full object-cover " src="./images/bg2.png"
+                    alt="">
             </div>
             <div class="heroCar absolute w-fit h-full">
-                <div class="relative  z-[2]   min-w-96 w-[45%] left-1/2 top-[40%]">
-                <!-- <div class="overlay z-[4] bg-[#ffffff63] absolute "></div>     -->
-                <a href="#carSection"><img id="car" class=""  src="./images/heroCar.png "
-                    alt=""></a>
+                <div
+                    class="relative scale-90 sm:scale-100 z-[2] left-1/2 -translate-x-1/2 top-1/3 min-w-96 w-[45%] sm:left-1/2 sm:top-[40%]">
+                    <!-- <div class="overlay z-[4] bg-[#fa8a8ac9] absolute w-full h-full "></div>   It is solved by giving cursor pointer-event-none  -->
+                    <a href="#carSection"><img id="car" class="" src="./images/heroCar.png " alt=""></a>
                 </div>
             </div>
 
             <!-- <h1 class="heroTxt z-[7] absolute  md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 uppercase text-[0px] lg:text-[10rem] xl:text-[12rem] w-full "></h1> -->
-            <h1 class="heroTxt absolute flex justify-center top-60 uppercase text-[0px] lg:text-[10rem]  xl:text-[16rem] 2xl:text-[19rem] w-full h-full z-[1]"></h1>
+            <h1
+                class="heroTxt absolute flex justify-center top-60 uppercase text-[0px] lg:text-[10rem]  xl:text-[16rem] 2xl:text-[19rem] w-full h-full z-[1]">
+            </h1>
             <div class="callToAction"></div>
             <div class="scrlDwn w-screen h-screen flex">
-                <div title="Scroll Down" class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-20 w-24 h-24 ">
+                <div title="Scroll Down"
+                    class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-[2.5rem] sm:bottom-10 w-24 h-24 ">
                     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
                         type="module"></script>
                     <dotlottie-player src="https://lottie.host/843d6dd5-c7b3-41cf-8e7f-97cc4ccae5d0/YCrOp0GNjk.json"
@@ -99,7 +110,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>

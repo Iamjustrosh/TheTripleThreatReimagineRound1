@@ -1,3 +1,6 @@
+
+
+
 function aniSplashScreen(){
   var h1 = document.querySelector(".splLoad");
   var text = "Ford";
@@ -47,12 +50,14 @@ function cursor(){
 
   var mustang = document.querySelector("#car");
   mustang.addEventListener("mouseenter",function(){
+    cursor.innerHTML = "Ride it!" ,
     gsap.to(cursor,{
-      scale: "4",
+      scale: "6",
       backgroundColor: "#f35f5fd8 "
     })
   })
   mustang.addEventListener("mouseleave",function(){
+    cursor.innerHTML ="" ,
     gsap.to(cursor,{
       scale: "1",
       backgroundColor: "#ffffff93"
@@ -66,6 +71,7 @@ function aniCar(){
   var car = document.querySelector("#car");
   gsap.from(car,{
     x: 200,
+    opacity: 0,
     delay: 3,
     ease: "ease-in",
     duration: 1.2,
@@ -97,7 +103,7 @@ gsap.from(".chr", {
 });
 }
 
-
+document.addEventListener('contextmenu', event => event.preventDefault());
 aniCar();
 cursor();
 aniSplashScreen();
