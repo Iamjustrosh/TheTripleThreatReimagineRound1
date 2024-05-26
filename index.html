@@ -14,11 +14,18 @@
 <body style="user-select: none;" theme="black">
 
 
-    <!-- <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
-        <h1 class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
-         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
-     </div> -->
-     <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
+    <div id="cursor"
+        class="hidden w-4 h-4 font-medium rounded-full lg:flex justify-center text-center leading-none  items-center bg-[#ffffff93] z-[3] text-[0.15rem] overflow-hidden fixed pointer-events-none ">
+    </div>
+
+    <div
+        class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
+        <h1
+            class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white ">
+        </h1>
+        <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
+    </div>
+    <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
         <div class="navbar gap-2 flex justify-between items-center h-20 w-full bg-red text-lg text-white">
             <div class="left w-14">
                 <a href="#heroSection"><img src="./assets/Ford .png" alt=""></a>
@@ -35,29 +42,25 @@
             <div class="right right-0 flex md:flex-row md:items-center md:gap-[4vw]"> 
                 <i class="ri-user-fill "></i>
                 <div class="selectBox">
-                    <!-- <select form="selectBox" name="selectBox" id="language">
-                        <option value="selectBox">English</option>
-                        <option value="">Hindi</option>
-                        <option value="">Tamil</option>
-                    </select> -->
                     <a href="#">
-                        <i class="ri-global-fill"></i>
-                    </a>
+                        <i class="ri-global-fill"></i> 
+                    </a> 
                 </div>
 
                 <div class="searchBox">
                     <input type="text" placeholder="Search Your Vehicle">
                     <a href="#">
                         <i class="searchbtn ri-search-line"></i>
-                    </a>
+                    </a> 
                 </div>
             </div>
             <div class="">
-                <i onclick="onToggleMenu(this)" name="menu" class="fa-solid fa-bars ms:hidden" style="color: #ffffff;"></i>
+                <!-- <i onclick="onToggleMenu(this)" name="menu" class="fa-solid fa-bars ms:hidden" style="color: #ffffff;"></i> -->
                 <!-- <i for="check" class="checkbtn fa-solid fa-bars" style="color: #ffffff;"></i> -->
             </div>
 
         </div>
+
         <div id="herosection" class="heroSection relative flex">
             <div class="heroBg blur-lg w-screen h-screen absolute">
                 <img id="img" class=" sm:opacity-100 w-full h-full object-cover " src="./images/bg2.png" alt="">
