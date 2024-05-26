@@ -50,15 +50,6 @@ body[theme="white"]{
 }
 
 
-
-
-
-
-
-
-
-
-
 .splashScreen {
     /* display: flex;
     flex-wrap: wrap;
@@ -246,6 +237,9 @@ body[theme="white"]{
 @media (min-width:1920px) {
     .heroTxt{
         font-size: 23rem !important;
+    }
+    .scrollDown{
+        bottom: 5rem;
     }
 }
 

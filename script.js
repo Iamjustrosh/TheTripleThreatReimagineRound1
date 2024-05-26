@@ -1,6 +1,4 @@
 
-
-
 function aniSplashScreen(){
   var h1 = document.querySelector(".splLoad");
   var text = "Ford";
@@ -27,15 +25,6 @@ function aniSplashScreen(){
 }
 
 
-gsap.from(".heroTxt", {
-  y: 100,
-  stagger: 0.10,
-  opacity: 0.5,
-  delay: 3.1,
-  ease: "ease-in",
-  duration: 0.8,
-});
-
 function cursor(){
 
   var main = document.querySelector("#main");
@@ -50,10 +39,10 @@ function cursor(){
 
   var mustang = document.querySelector("#car");
   mustang.addEventListener("mouseenter",function(){
-    cursor.innerHTML = "Ride it!" ,
+    cursor.innerHTML = "Throttle Up!" ,
     gsap.to(cursor,{
-      scale: "6",
-      backgroundColor: "#f35f5fd8 "
+      scale: "8",
+      backgroundColor: "#e94f4f8c "
     })
   })
   mustang.addEventListener("mouseleave",function(){
@@ -103,6 +92,17 @@ gsap.from(".chr", {
 });
 }
 
+
+gsap.from(".smlHero", {
+  y: 100,
+  opacity: 0.1,
+  delay: 2.7,
+  ease: "ease-in",
+  duration: 0.8,
+});
+
+
+  
 document.addEventListener('contextmenu', event => event.preventDefault());
 aniCar();
 cursor();
