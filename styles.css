@@ -105,6 +105,9 @@ body[theme="white"]{
     }
 }
 
+
+
+
 .splashScreen h1 {
     animation: fade-in 1s ease-in forwards;
     opacity: 0;
@@ -127,6 +130,7 @@ body[theme="white"]{
 }
 
 .navbar{
+    width: 100% ;
     background-color: transparent;
     position: sticky;
     z-index: 2;
