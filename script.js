@@ -103,7 +103,13 @@ gsap.from(".chr", {
 });
 }
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+
+// const navLinks = document.querySelector('.nav-links');
+// function onToggleMenu(e){
+// e.name = e.name === 'menu' ? 'close' : 'menu'
+// navLinks.classList.toggle('top-[9%]');
+// }
+
 aniCar();
 cursor();
 aniSplashScreen();

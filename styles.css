@@ -154,7 +154,69 @@ body[theme="white"]{
 .right i:hover{
     text-decoration: underline;
 }
+/*
+.left{
+    width: 10;
+}
 
+.left a img{
+    width: 20%;
+    height: auto ;
+}
+
+.center{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+.center a{
+    text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;
+    text-underline-offset: 25px;     
+}
+
+.center a:hover{
+    text-decoration: underline;
+}
+
+.right{
+    width: 35em;
+    display: flex;
+    justify-content: right;
+    margin: 0 10%;
+    align-items: center;
+}
+
+.right i{
+    margin: 0 0.2em;
+    text-underline-offset: 25px;   
+    text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;        
+}
+
+.right i:hover{
+    text-decoration: underline;
+}
+.selectBox{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.selectBox select{
+    width: 15px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    color: black;
+}
+*/
 .searchBox{
     height: 30px;
     display: flex;
