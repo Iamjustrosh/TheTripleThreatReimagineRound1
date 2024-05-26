@@ -19,23 +19,22 @@
          <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
      </div>
      <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
-        <div class="navbar gap-2 flex justify-between items-center h-20 w-full bg-transparent text-lg text-white">
-            <div class="left">
+        <div class="navbar gap-2 flex justify-between items-center h-20 w-full bg-red text-lg text-white">
+            <div class="left w-14">
                 <a href="#heroSection"><img src="./assets/Ford .png" alt=""></a>
             </div>
-            <div class="center">
-                <a href="">Vehicles</a>
-                <a href="">Shop</a>
-                <a href="">Support & Services</a>
+            <div class="center md:static absolute bg-black md:min-h-fit min-h-[60vh] left-0 top[-100%] md:w-auto w-full items-center  px-5 ">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li><a href="">Vehicles</a> </li>
+                    <li><a href="">Shop</a> </li>
+                    <li><a href="">Support & Services</a> </li>
+                    <li><a href="">Help</a> </li>
+                </ul>
+                
             </div>
-            <div class="right"> 
-                <i class="ri-user-fill"></i>
+            <div class="right right-0 flex md:flex-row md:items-center md:gap-[4vw]"> 
+                <i class="ri-user-fill "></i>
                 <div class="selectBox">
-                    <select form="selectBox" name="selectBox" id="language">
-                        <option value="selectBox">English</option>
-                        <option value="">Hindi</option>
-                        <option value="">Tamil</option>
-                    </select>
                     <a href="#">
                         <i class="ri-global-fill"></i> 
                     </a> 
@@ -48,6 +47,11 @@
                     </a> 
                 </div>
             </div>
+            <div class="">
+                <!-- <i onclick="onToggleMenu(this)" name="menu" class="fa-solid fa-bars ms:hidden" style="color: #ffffff;"></i> -->
+                <!-- <i for="check" class="checkbtn fa-solid fa-bars" style="color: #ffffff;"></i> -->
+            </div>
+
         </div>
         <div id="herosection" class="heroSection relative flex">
             <div class="heroBg w-screen h-screen absolute">
