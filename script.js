@@ -104,7 +104,7 @@ gsap.from(".smlHero", {
 
   
 document.addEventListener('contextmenu', event => event.preventDefault());
-=======
+
 
 // const navLinks = document.querySelector('.nav-links');
 // function onToggleMenu(e){
@@ -112,7 +112,6 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 // navLinks.classList.toggle('top-[9%]');
 // }
 
->>>>>>> rakesh
 aniCar();
 cursor();
 aniSplashScreen();
