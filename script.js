@@ -102,7 +102,12 @@ gsap.from(".smlHero", {
 });
 
 
-  
+
+
+
+
+
+
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 

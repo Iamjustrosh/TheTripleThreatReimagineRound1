@@ -52,7 +52,11 @@ body[theme="white"]{
 }
 
 
+:root{
+    --white: #fff;
+    --black: #000;
 
+}
 
 
 
@@ -225,6 +229,17 @@ body[theme="white"]{
 }
 
 
+.categoryCard:hover img{
+    transform: scale(1.05);
+    filter: grayscale(0);
+    transition: 0.5s ease-in-out;
+
+}
+
+.categoryCard img{
+    filter: grayscale(0.3);
+    transition: 0.5s ease-in-out;
+}
 
 /* 
 .container {
