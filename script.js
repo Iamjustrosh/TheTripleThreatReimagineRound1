@@ -1,9 +1,9 @@
 
-function aniSplashScreen(){
+function aniSplashScreen() {
   var h1 = document.querySelector(".splLoad");
   var text = "Ford";
   var arr = text.split("");
-  
+
   function generateText(text) {
     text.forEach((data) => {
       var span = document.createElement("span");
@@ -25,40 +25,40 @@ function aniSplashScreen(){
 }
 
 
-function cursor(){
+function cursor() {
 
   var main = document.querySelector("#main");
-  var cursor = document.querySelector("#cursor"); 
-  main.addEventListener("mousemove",function(pts){
-    gsap.to(cursor,{
-      x:pts.x,
-      y:pts.y,
+  var cursor = document.querySelector("#cursor");
+  main.addEventListener("mousemove", function (pts) {
+    gsap.to(cursor, {
+      x: pts.x,
+      y: pts.y,
     })
   })
 
 
   var mustang = document.querySelector("#car");
-  mustang.addEventListener("mouseenter",function(){
-    cursor.innerHTML = "Throttle Up!" ,
-    gsap.to(cursor,{
-      scale: "8",
-      backgroundColor: "#e94f4f8c "
-    })
+  mustang.addEventListener("mouseenter", function () {
+    cursor.innerHTML = "Throttle Up!",
+      gsap.to(cursor, {
+        scale: "8",
+        backgroundColor: "#e94f4f8c "
+      })
   })
-  mustang.addEventListener("mouseleave",function(){
-    cursor.innerHTML ="" ,
-    gsap.to(cursor,{
-      scale: "1",
-      backgroundColor: "#ffffff93"
-    })
+  mustang.addEventListener("mouseleave", function () {
+    cursor.innerHTML = "",
+      gsap.to(cursor, {
+        scale: "1",
+        backgroundColor: "#ffffff93"
+      })
   })
 
 }
 
 
-function aniCar(){
+function aniCar() {
   var car = document.querySelector("#car");
-  gsap.from(car,{
+  gsap.from(car, {
     x: 200,
     opacity: 0,
     delay: 3,
@@ -67,29 +67,29 @@ function aniCar(){
   })
 }
 
-function heroTxt(){
-var h1 = document.querySelector(".heroTxt");
-var text = "MUSTANG";
-var arr = text.split("");
+function heroTxt() {
+  var h1 = document.querySelector(".heroTxt");
+  var text = "MUSTANG";
+  var arr = text.split("");
 
-function generateText(text) {
-  text.forEach((data) => {
-    var span = document.createElement("span");
-    span.classList.add("chr");
-    span.innerHTML = data;
-    h1.appendChild(span);
+  function generateText(text) {
+    text.forEach((data) => {
+      var span = document.createElement("span");
+      span.classList.add("chr");
+      span.innerHTML = data;
+      h1.appendChild(span);
+    });
+  }
+  generateText(arr);
+  // gsap
+  gsap.from(".chr", {
+    y: 100,
+    stagger: 0.13,
+    opacity: 0,
+    delay: 3.1,
+    ease: "ease-in",
+    duration: 1,
   });
-}
-generateText(arr);
-// gsap
-gsap.from(".chr", {
-  y: 100,
-  stagger: 0.13,
-  opacity: 0,
-  delay: 3.1,
-  ease: "ease-in",
-  duration: 1,
-});
 }
 
 
@@ -101,8 +101,42 @@ gsap.from(".smlHero", {
   duration: 0.8,
 });
 
-
-
+function categoryAnimation(){
+  gsap.from(".categoriesHeading",{
+    scrollTrigger:{
+        trigger:".category",
+        start: "top 70%",
+        scrub: 1,
+    },
+    y:20,
+    opacity:0,
+    duration:2,
+    ease: "power4.out",
+  })
+  gsap.from(".categoryCard",{
+    scrollTrigger:{
+        trigger:".categoryCard",
+        start: "top 65%",
+        end: "top 20%",
+        scrub: 2,
+    },
+    stagger: 0.01,
+    y: 50,
+    opacity: 0,
+    ease: "power4.out",
+  })
+  gsap.from(".categoriesCTA",{
+    scrollTrigger:{
+        trigger:".categoriesCTA",
+        start: "top 80%",
+        end: "top top",
+        scrub: 2,
+    },
+    y: 50,
+    opacity: 0,
+    ease: "power4.out",
+  })
+}
 
 
 
@@ -111,13 +145,10 @@ gsap.from(".smlHero", {
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 
-// const navLinks = document.querySelector('.nav-links');
-// function onToggleMenu(e){
-// e.name = e.name === 'menu' ? 'close' : 'menu'
-// navLinks.classList.toggle('top-[9%]');
-// }
 
+
+aniSplashScreen();
+categoryAnimation();
 aniCar();
 cursor();
-aniSplashScreen();
 heroTxt();
