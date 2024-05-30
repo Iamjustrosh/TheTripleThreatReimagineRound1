@@ -15,61 +15,59 @@
 
 
     <div id="cursor"
-        class="hidden w-4 h-4 rounded-full sm:flex justify-center items-center bg-[#ffffff93] z-[3] text-[.25rem] fixed pointer-events-none ">
+        class="hidden w-4 h-4 font-medium rounded-full lg:flex justify-center text-center leading-none  items-center bg-[#ffffff93] z-[3] text-[0.15rem] overflow-hidden fixed pointer-events-none ">
     </div>
 
-    <div class="splashScreen flex justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
-        <h1 class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white "></h1>
-         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
-     </div>
-     <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
-        <div class="navbar gap-2 flex justify-between items-center h-20 w-full bg-red text-lg text-white">
-            <div class="left w-14">
-                <a href="#heroSection"><img src="./assets/Ford .png" alt=""></a>
+    <div
+        class="splashScreen hidden justify-center items-center bg-black w-screen h-screen z-10 fixed text-white">
+        <h1
+            class="splLoad min font-thin md:font-thin lg:font-normal   text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white ">
+        </h1>
+        <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
+    </div>
+    <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
+        
+        <!-- <div class="navbar relative justify-between lg:h-20 items-center w-full text-lg">
+            <div class="left flex px-4 py-2 lg:w-20 justify-between relative top-0 bg-red-500">
+                <a class="w-20" href="#heroSection"><img src="./assets/Ford .png" alt=""></a>
+                <i class="ri-menu-line self-center lg:hidden"></i>
             </div>
-            <div class="center md:static absolute bg-black md:min-h-fit min-h-[60vh] left-0 top[-100%] md:w-auto w-full items-center  px-5 ">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                    <li><a href="">Vehicles</a> </li>
-                    <li><a href="">Shop</a> </li>
-                    <li><a href="">Support & Services</a> </li>
-                    <li><a href="">Help</a> </li>
-                </ul>
+            <div class="right top-0 lg:h-20 flex flex-col lg:flex-row gap-20 text-center relative lg:absolute  bg-yellow-500 lg:top-[2]">
+                <div class="center flex justify-center lg:flex-row lg:w-[100%] bg-green-400 ">
+                    <ul class="">
+                        <li><a href="">Vehicles</a> </li>
+                        <li><a href="">Shop</a> </li>
+                        <li><a href="">Support & Services</a> </li>
+                        <li><a href="">Help</a> </li>
+                    </ul>
                 
-            </div>
-            <div class="right right-0 flex md:flex-row md:items-center md:gap-[4vw]"> 
-                <i class="ri-user-fill "></i>
-                <div class="selectBox">
-                    <!-- <select form="selectBox" name="selectBox" id="language">
-                        <option value="selectBox">English</option>
-                        <option value="">Hindi</option>
-                        <option value="">Tamil</option>
-                    </select> -->
-                    <a href="#">
-                        <i class="ri-global-fill"></i>
-                    </a>
+                    
                 </div>
-
-                <div class="searchBox">
-                    <input type="text" placeholder="Search Your Vehicle">
-                    <a href="#">
-                        <i class="searchbtn ri-search-line"></i>
-                    </a>
+                <div class="cright flex justify-center"> 
+                    <i class="ri-user-fill "></i>
+                    <div class="selectBox">
+                        <a href="#">
+                            <i class="ri-global-fill"></i> 
+                        </a> 
+                    </div>
+    
+                    <div class="searchBox">
+                        <input type="text" placeholder="Search Your Vehicle">
+                        <a href="#">
+                            <i class="searchbtn ri-search-line"></i>
+                        </a> 
+                    </div>
                 </div>
             </div>
-            <div class="">
-                <!-- <i onclick="onToggleMenu(this)" name="menu" class="fa-solid fa-bars ms:hidden" style="color: #ffffff;"></i> -->
-                <!-- <i for="check" class="checkbtn fa-solid fa-bars" style="color: #ffffff;"></i> -->
-            </div>
+        </div> -->
 
-        </div>
-        <div id="herosection" class="heroSection relative flex">
-            <div class="heroBg  w-screen h-screen absolute">
-                <img id="img" class="opacity-0 sm:opacity-100 w-full h-full object-cover " src="./images/bg2.png"
-                    alt="">
+        <div id="herosection" class="heroSection relative hidden">
+            <div class="heroBg blur-lg w-screen h-screen absolute">
+                <img id="img" class=" sm:opacity-100 w-full h-full object-cover " src="./images/bg2.png" alt="">
             </div>
             <div class="heroCar absolute w-fit h-full">
                 <div
-                    class="relative scale-90 sm:scale-100 z-[2] left-1/2 -translate-x-1/2 top-1/3 min-w-96 w-[45%] sm:left-1/2 sm:top-[40%]">
+                    class="relative scale-90 sm:scale-100 z-[2] left-1/2 -translate-x-1/2 top-2/3 -translate-y-1/2 sm:translate-y-0 min-w-96 w-[45%] sm:left-1/2 sm:top-[40%]">
                     <!-- <div class="overlay z-[4] bg-[#fa8a8ac9] absolute w-full h-full "></div>   It is solved by giving cursor pointer-event-none  -->
                     <a href="#carSection"><img id="car" class="" src="./images/heroCar.png " alt=""></a>
                 </div>
@@ -79,10 +77,15 @@
             <h1
                 class="heroTxt absolute flex justify-center top-60 uppercase text-[0px] lg:text-[10rem]  xl:text-[16rem] 2xl:text-[19rem] w-full h-full z-[1]">
             </h1>
+            <div
+                class="absolute flex justify-center top-2/3 -translate-y-1/2 uppercase text-[6rem] lg:hidden w-full h-full">
+                <h1 class="smlHero leading-none tracking-tighter">
+                     <span class="font-light">Build</span> <br> <span class="font-semibold">Ford </span> <br> <span class="font-bold"> Tough </span></h1>
+            </div>
+
             <div class="callToAction"></div>
-            <div class="scrlDwn w-screen h-screen flex">
-                <div title="Scroll Down"
-                    class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-[2.5rem] sm:bottom-10 w-24 h-24 ">
+            <div title="Scroll Down" class="scrlDwn w-screen h-screen flex ">
+                <div class="scrollDown absolute left-1/2 -translate-x-1/2 bottom-[2.5rem] sm:bottom-10 w-24 h-24 ">
                     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
                         type="module"></script>
                     <dotlottie-player src="https://lottie.host/843d6dd5-c7b3-41cf-8e7f-97cc4ccae5d0/YCrOp0GNjk.json"
@@ -91,7 +94,7 @@
             </div>
         </div>
 
-        <div id="carSection" class="powerSection w-full h-screen">
+        <div id="carSection" class="powerSection w-full h-screen hidden">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fugit enim ipsam suscipit maiores porro,
                 cupiditate facilis similique alias architecto voluptatum. Ullam saepe expedita libero fuga possimus
                 deserunt perferendis ad obcaecati beatae quibusdam odio molestias ea eligendi rerum ducimus, alias
@@ -110,12 +113,17 @@
         </div>
 
 
+        <a href="#" class="to-top  bg-white fixed bottom-5 right-5 w-[30px] h-[30px] flex items-center justify-center">
+            <i for="check" class="checkbtn fa-solid fa-bars text-black"></i>
+        </a>
+
 
 
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script.js"></script>
+
 
 </body>
 
