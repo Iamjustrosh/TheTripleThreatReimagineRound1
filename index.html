@@ -26,31 +26,21 @@
         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
     </div>
     <div id="main" class="wrapper w-screen h-screen overflow-x-hidden relative">
-        
-        <!-- <div class="navbar relative justify-between lg:h-20 items-center w-full text-lg">
-            <div class="left flex px-4 py-2 lg:w-20 justify-between relative top-0 bg-red-500">
-                <a class="w-20" href="#heroSection"><img src="./assets/Ford .png" alt=""></a>
-                <i class="ri-menu-line self-center lg:hidden"></i>
+
+        <!-- Navbar started -->
+        <nav class="navbar p-3 flex bg-transparent justify-between items-center">
+            <a href="#" id="logo" class="flex gap-2 items-center">
+                <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
+            </a>
+            <div id="center" class="hidden md:flex gap-12">
+                <a href=""> Vehicles </a>
+                <a href=""> Shop </a>
+                <a href=""> Support & Services </a>
+                <a href=""> Help </a>
             </div>
-            <div class="right top-0 lg:h-20 flex flex-col lg:flex-row gap-20 text-center relative lg:absolute  bg-yellow-500 lg:top-[2]">
-                <div class="center flex justify-center lg:flex-row lg:w-[100%] bg-green-400 ">
-                    <ul class="">
-                        <li><a href="">Vehicles</a> </li>
-                        <li><a href="">Shop</a> </li>
-                        <li><a href="">Support & Services</a> </li>
-                        <li><a href="">Help</a> </li>
-                    </ul>
-                
-                    
-                </div>
-                <div class="cright flex justify-center"> 
+            <div class="right hidden md:flex md:justify-center md:items-center gap-2"> 
                     <i class="ri-user-fill "></i>
-                    <div class="selectBox">
-                        <a href="#">
-                            <i class="ri-global-fill"></i> 
-                        </a> 
-                    </div>
-    
+                    <a href="#"> <i class="ri-global-fill"></i> </a>
                     <div class="searchBox">
                         <input type="text" placeholder="Search Your Vehicle">
                         <a href="#">
@@ -58,8 +48,41 @@
                         </a> 
                     </div>
                 </div>
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="ri-menu-line"></i>
+            </button>
+
+            <div id="nav-dialog" class="fixed z-10 md:hidden hidden bg-black inset-0">
+                <div id="nav-bar" class="flex justify-between p-3">
+                    <a href="#" id="logo" class="flex gap-2 items-center">
+                        <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
+                    </a>
+                    <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flex flex-col text-center">
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Vehicles </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Shop </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Support & Services </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Help </a>
+                </div>
+                <div class="nav-bottom flex justify-center items-center gap-10"> 
+                    <i class="ri-user-fill "></i>
+                    <a href="#"> <i class="ri-global-fill"></i> </a>
+                    <div class="searchBox fixed">
+                        <input type="text" placeholder="Search Your Vehicle">
+                        <a href="#">
+                            <i class="searchbtn ri-search-line"></i>
+                        </a> 
+                    </div>
+                </div>
+
             </div>
-        </div> -->
+
+        </nav>
+
+        <!-- Navbar ended -->
 
         <div id="herosection" class="heroSection relative hidden">
             <div class="heroBg blur-lg w-screen h-screen absolute">
@@ -114,7 +137,7 @@
 
 
         <a href="#" class="to-top  bg-white fixed bottom-5 right-5 w-[30px] h-[30px] flex items-center justify-center">
-            <i for="check" class="checkbtn fa-solid fa-bars text-black"></i>
+            <i class="ri-arrow-up-line text-black"></i>
         </a>
 
 

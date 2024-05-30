@@ -116,6 +116,11 @@ window.addEventListener("scroll", () => {
   }
 })
 
+const navDialog = document.getElementById("nav-dialog");
+function handleMenu(){
+  navDialog.classList.toggle('hidden');
+}
+
 aniCar();
 cursor();
 aniSplashScreen();
