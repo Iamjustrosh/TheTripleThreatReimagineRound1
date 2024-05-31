@@ -64,12 +64,6 @@ html{
     
 }
 
-.splashScreen {
-        
-    animation: fade-out ease-out forwards;
-    animation-delay: 3s;
-}
-
 @media(max-width:950px) {
     .splashScreen h1{
        font-size: 5em !important;
@@ -86,23 +80,8 @@ html{
     }
 }
 
-@keyframes fade-out {
-    to {
-        opacity: 0;
-        z-index: -10;
-    }
-}
 
-.splashScreen h1 {
-    animation: fade-in 1s ease-in forwards;
-    opacity: 0;
-}
-    
-@keyframes fade-in {
-    to {
-        opacity: 1;
-    }
-}
+
 
 .splashScreen h1 {
     font-family: "Montserrat","Fregular", Helvetica, sans-serif ;
@@ -217,13 +196,13 @@ html{
 .to-top{
     border-radius: 50%;
     text-decoration: none;
-    opacity: 1;
+    opacity: 0;
     pointer-events: pointer;
     transition: all .4s;
 }
 
-/* .to-top.active{
+.active{
     bottom: 10%;
     pointer-events: auto;
     opacity: 1;
-} */
+}

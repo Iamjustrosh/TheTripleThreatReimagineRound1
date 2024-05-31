@@ -1,29 +1,78 @@
+function loaderAnimation(){
+  var tl = gsap.timeline();
 
-function aniSplashScreen() {
-  var h1 = document.querySelector(".splLoad");
-  var text = "Ford";
-  var arr = text.split("");
+var h1 = document.querySelector(".splLoad");
+var text = "Ford";
+var arr = text.split("");
+var car = document.querySelector("#car");
+var heroT = document.querySelector(".heroTxt");
+var MusT = "MUSTANG";
+var arrMust = MusT.split("");
 
-  function generateText(text) {
-    text.forEach((data) => {
-      var span = document.createElement("span");
-      span.classList.add("char");
-      span.innerHTML = data;
-      h1.appendChild(span);
-    });
-  }
-  generateText(arr);
-  // gsap
-  gsap.from(".char", {
-    y: 100,
-    stagger: 0.13,
-    opacity: 0,
-    delay: 0.1,
-    ease: "ease-in",
-    duration: 1,
+
+function generateText(text) {
+  text.forEach((data) => {
+    var span = document.createElement("span");
+    span.classList.add("char");
+    span.innerHTML = data;
+    h1.appendChild(span);
   });
 }
 
+generateText(arr);
+
+tl.from(".char", {
+  y: 100,
+  stagger: 0.13,
+  opacity: 0,
+  ease: "ease-in",
+  duration: 1,
+});
+
+tl.to(".splashScreen", {
+  autoAlpha: 0,
+})
+
+
+tl.from(car, {
+  x: 200,
+  opacity: 0,
+  ease: "ease-in",
+  duration: 1.2,
+},'a');
+
+
+
+
+
+function generateTextForHeroText(text) {
+  text.forEach((data) => {
+    var spanMust = document.createElement("span");
+    spanMust.classList.add("chr");
+    spanMust.innerHTML = data;
+    heroT.appendChild(spanMust);
+  });
+}
+generateTextForHeroText(arrMust);
+
+tl.from(".chr", {
+  y: 100,
+  stagger: 0.13,
+  opacity: 0,
+  duration: 1,
+  ease: "ease-in",
+},'a');
+
+
+
+tl.from(".smlHero", {
+  y: 100,
+  opacity: 0,
+  ease: "ease-in",
+  duration: 1,
+},'a');
+
+}
 
 function cursor() {
 
@@ -55,51 +104,6 @@ function cursor() {
 
 }
 
-
-function aniCar() {
-  var car = document.querySelector("#car");
-  gsap.from(car, {
-    x: 200,
-    opacity: 0,
-    delay: 3,
-    ease: "ease-in",
-    duration: 1.2,
-  })
-}
-
-function heroTxt() {
-  var h1 = document.querySelector(".heroTxt");
-  var text = "MUSTANG";
-  var arr = text.split("");
-
-  function generateText(text) {
-    text.forEach((data) => {
-      var span = document.createElement("span");
-      span.classList.add("chr");
-      span.innerHTML = data;
-      h1.appendChild(span);
-    });
-  }
-  generateText(arr);
-  // gsap
-  gsap.from(".chr", {
-    y: 100,
-    stagger: 0.13,
-    opacity: 0,
-    delay: 3.1,
-    ease: "ease-in",
-    duration: 1,
-  });
-}
-
-
-gsap.from(".smlHero", {
-  y: 100,
-  opacity: 0.1,
-  delay: 2.7,
-  ease: "ease-in",
-  duration: 0.8,
-});
 
 function categoryAnimation(){
   gsap.from(".categoriesHeading",{
@@ -139,21 +143,17 @@ function categoryAnimation(){
 }
 
 
-
-
-
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 
-const totop =document.querySelector(".to-top");
+const totop = document.querySelector(".to-top");
 window.addEventListener("scroll", () => {
-  if(window.pageYOffset >100){
+  if (window.scrollY > 100) {
     totop.classList.add("active");
-  }
-  else{
+  } else {
     totop.classList.remove("active");
   }
-})
+});
 
 const navDialog = document.getElementById("nav-dialog");
 function handleMenu(){
@@ -165,11 +165,9 @@ function handleMenu(){
 
 
 
-
-aniSplashScreen();
+loaderAnimation();
 categoryAnimation();
-aniCar();
 cursor();
-heroTxt();
+
 
 
