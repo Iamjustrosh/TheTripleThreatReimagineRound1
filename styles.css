@@ -120,6 +120,8 @@ html{
     display: inline-block;
 }
 
+/* Navbar started here */
+
 .navbar{
     background-color: transparent;
     position: sticky;
@@ -127,26 +129,19 @@ html{
     padding: 1.2px 2%;
     font-size: 1em;
 }
-.center a{
+
+.navbar #center a{
+    font-size: medium;
+    text-underline-offset: 10px;
     text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;
-    text-underline-offset: 25px;     
 }
 
-.center a:hover{
-    text-decoration: underline;
-}
-
-.right {
-    text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;
-    text-underline-offset: 25px;     
-}
-
-.right i:hover{
+#center a:hover{
     text-decoration: underline;
 }
 
 .searchBox{
-    height: 30px;
+    height:30px;
     display: flex;
     cursor: pointer;
     padding: 10px;
@@ -182,21 +177,8 @@ html{
 
 #check{
     display: none;
-} 
-
-@media (max-width:768px){
-    .center{
-        display: block;
-        display: list-item;
-        width: 100%;
-        height: 100%;
-        top: 5em;
-        text-align: center;
-    }
-    .right{
-        margin-right: 5em;
-    }
 }
+
 
 /* Hero Section */
 
@@ -230,3 +212,18 @@ html{
     transition: 0.5s ease-in-out;
 }
 
+
+
+.to-top{
+    border-radius: 50%;
+    text-decoration: none;
+    opacity: 1;
+    pointer-events: pointer;
+    transition: all .4s;
+}
+
+/* .to-top.active{
+    bottom: 10%;
+    pointer-events: auto;
+    opacity: 1;
+} */

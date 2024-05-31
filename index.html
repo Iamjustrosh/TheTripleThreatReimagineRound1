@@ -26,14 +26,70 @@
     </div>
     <div id="main" class="wrapper overflow-x-hidden relative">
 
+        <!-- Navbar started -->
+        <nav class="navbar z-10 p-3 flex bg-transparent justify-between items-center">
+            
+                <a href="#" id="logo" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
+                </a>
+                <div id="center" class="hidden md:flex gap-12">
+                    <a href=""> Vehicles </a>
+                    <a href=""> Shop </a>
+                    <a href=""> Support & Services </a>
+                    <a href=""> Help </a>
+                </div>
+                <div class="right hidden md:flex md:justify-center md:items-center gap-2">
+                    <i class="ri-user-fill "></i>
+                    <a href="#"> <i class="ri-global-fill"></i> </a>
+                    <div class="searchBox">
+                        <input type="text" placeholder="Search Your Vehicle">
+                        <a href="#">
+                            <i class="searchbtn ri-search-line"></i>
+                        </a>
+                    </div>
+                </div>
+            
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="ri-menu-line"></i>
+                </button>
+           
+            <div id="nav-dialog" class="fixed md:hidden hidden bg-black inset-0 ">
+                <div id="nav-bar" class="flex justify-between p-3">
+                    <a href="#" id="logo" class="flex gap-2 items-center">
+                        <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
+                    </a>
+                    <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flex flex-col text-center">
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Vehicles </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Shop </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Support & Services </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Help </a>
+                </div>
+                <div class="nav-bottom flex justify-center items-center gap-10">
+                    <i class="ri-user-fill "></i>
+                    <a href="#"> <i class="ri-global-fill"></i> </a>
+                    <div class="searchBox fixed">
+                        <input type="text" placeholder="Search Your Vehicle">
+                        <a href="#">
+                            <i class="searchbtn ri-search-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- Navbar ended -->
+
         <div id="herosection" class="heroSection w-screen h-screen relative flex">
             <div class="heroBg blur-lg w-full h-full absolute">
                 <img id="img" class=" sm:opacity-100 w-full h-full object-cover " src="./images/bg2.png" alt="">
             </div>
             <div class="heroCar absolute top-2/3 -translate-y-1/2 px-3 lg:scale-50 lg:top-[60%] z-[2]">
                 <a href="#sec3"><img id="car" class="" src="./images/heroCar.png " alt=""></a>
-                <!-- <div class="scale-90 sm:scale-100 z-[2] left-1/2 -translate-x-1/2 top-2/3 -translate-y-1/2 sm:translate-y-0 min-w-96 w-[45%] sm:left-1/2 sm:top-[40%]">
-                </div> -->
             </div>
 
             <h1
@@ -46,9 +102,6 @@
                         class="font-bold"> Tough </span>
                 </h1>
             </div>
-
-            <!-- <div title="Scroll Down" class="scrlDwn w-screen h-screen flex ">
-            </div> -->
             <div
                 class="scrollDown hidden md:block absolute left-1/2 -translate-x-1/2 bottom-[5rem] sm:bottom-10 w-24 h-24 ">
                 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
@@ -110,10 +163,6 @@
             overflow-hidden relative border-2 border-gray-800  text-white transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-[#0093f0] before:transition-transform before:duration-500 before:content-[''] before:hover:scale-x-100">
                     <h3>Explore More</h3>
                 </div>
-                <!-- <div class="categoriesCTA text-md mt-2 mb-5 bg-transparent px-4 py-6 flex font-normal items-center text-center uppercase rounded-full lg:text-3xl  lg:px-6 lg:py-4
-            overflow-hidden relative border-2 border-white bg-white text-black transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-black before:transition-transform before:duration-500 before:content-[''] hover:text-white before:hover:scale-x-100">
-                <h3>Explore More</h3>
-            </div> -->
             </div>
         </div>
 
@@ -160,6 +209,14 @@
                 at?</p>
         </div>
 
+
+        <a href="#" class="to-top  bg-white fixed bottom-5 right-5 w-[30px] h-[30px] flex items-center justify-center">
+            <i class="ri-arrow-up-line text-black"></i>
+        </a>
+
+
+
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -177,6 +234,7 @@
     </script> -->
 
     <script src="script.js"></script>
+
 
 </body>
 
