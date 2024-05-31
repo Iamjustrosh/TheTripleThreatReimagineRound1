@@ -152,3 +152,5 @@ categoryAnimation();
 aniCar();
 cursor();
 heroTxt();
+
+
