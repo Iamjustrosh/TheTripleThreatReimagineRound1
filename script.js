@@ -42,14 +42,14 @@ function cursor() {
     cursor.innerHTML = "Throttle Up!",
       gsap.to(cursor, {
         scale: "8",
-        backgroundColor: "#e94f4f8c "
+        backgroundColor: "#0143bd4d "
       })
   })
   mustang.addEventListener("mouseleave", function () {
     cursor.innerHTML = "",
       gsap.to(cursor, {
         scale: "1",
-        backgroundColor: "#ffffff93"
+        backgroundColor: "#0142BD"
       })
   })
 

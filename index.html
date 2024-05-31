@@ -15,7 +15,7 @@
 
 
     <div id="cursor"
-        class="hidden w-4 h-4 font-medium rounded-full lg:flex justify-center text-center leading-none  items-center bg-[#ffffff93] z-[3] text-[0.15rem] overflow-hidden fixed pointer-events-none ">
+        class="hidden w-4 h-4 font-medium rounded-full lg:flex justify-center text-center leading-none  items-center bg-[#0142BD] z-[3] text-[0.15rem] overflow-hidden fixed pointer-events-none ">
     </div>
 
     <div class="splashScreen fixed flex justify-center items-center bg-black w-screen h-screen z-50 text-white">
@@ -25,42 +25,6 @@
         <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
     </div>
     <div id="main" class="wrapper overflow-x-hidden relative">
-        <div
-            class="navbar sticky top-0 left-0 gap-2 flex justify-between items-center h-20 w-full bg-red text-lg text-white z-10">
-            <div class="left w-14">
-                <a href="#heroSection"><img src="./assets/Ford .png" alt=""></a>
-            </div>
-            <div
-                class="center hidden md:static absolute bg-black md:min-h-fit min-h-[60vh] left-0 top[-100%] md:w-auto w-full items-center  px-5 ">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                    <li><a href="">Vehicles</a> </li>
-                    <li><a href="">Shop</a> </li>
-                    <li><a href="">Support & Services</a> </li>
-                    <li><a href="">Help</a> </li>
-                </ul>
-
-            </div>
-            <div class="right right-0 flex md:flex-row md:items-center md:gap-[4vw]">
-                <i class="ri-user-fill "></i>
-                <div class="selectBox">
-                    <a href="#">
-                        <i class="ri-global-fill"></i>
-                    </a>
-                </div>
-
-                <div class="searchBox">
-                    <input type="text" placeholder="Search Your Vehicle">
-                    <a href="#">
-                        <i class="searchbtn ri-search-line"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="">
-                <!-- <i onclick="onToggleMenu(this)" name="menu" class="fa-solid fa-bars ms:hidden" style="color: #ffffff;"></i> -->
-                <!-- <i for="check" class="checkbtn fa-solid fa-bars" style="color: #ffffff;"></i> -->
-            </div>
-
-        </div>
 
         <div id="herosection" class="heroSection w-screen h-screen relative flex">
             <div class="heroBg blur-lg w-full h-full absolute">
@@ -96,8 +60,8 @@
 
         <div class="sec2 w-full h-full mb-10">
             <div id="categories" class="categorySection flex justify-center items-center text-center flex-col">
-                <div class="categoriesHeading relative w-fit text-3xl font-bold lg:text-8xl">
-                    <h1 class="catHead uppercase">choose your drive</h1>
+                <div class="categoriesHeading relative w-fit text-xl font-bold lg:text-6xl">
+                    <h1 class="catHead">Thrilling. Liberating. Hardworking. Iconic.</h1>
                 </div>
                 <div
                     class="category text-2xl lg:text-3xl mt-10 py-10 flex flex-wrap flex-col lg:flex-row flex-shrink-0 gap-10 px-10">
@@ -109,7 +73,7 @@
                             <img class="absolute h-full " src="./images/image car.png" alt="Mustang">
                         </div>
                         <div class="cardTitle flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
-                            <h2 class="uppercase ">cars</h2>
+                            <h2 class="uppercase ">Mustang</h2>
                             <i class="ri-arrow-right-circle-line"></i>
                         </div>
                     </div>
@@ -122,7 +86,7 @@
                                 src="./images/image suv.png" alt="Bronco">
                         </div>
                         <div class="cardTitle flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
-                            <h2 class="uppercase ">SUVS</h2>
+                            <h2 class="uppercase ">Bronco</h2>
                             <i class="ri-arrow-right-circle-line"></i>
                         </div>
                     </div>
@@ -135,7 +99,7 @@
                                 src="./images/image truck.png" alt="Mustang">
                         </div>
                         <div class="cardTitle flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
-                            <h2 class="uppercase ">Trucks</h2>
+                            <h2 class="uppercase ">F-150</h2>
                             <i class="ri-arrow-right-circle-line"></i>
                         </div>
                     </div>
@@ -143,7 +107,7 @@
                 </div>
                 <div
                     class="categoriesCTA text-lg mt-2 mb-5 bg-transparent px-4 py-2 font-medium uppercase rounded-full lg:text-3xl lg:font-normal lg:px-6 lg:py-4
-            overflow-hidden relative border-2 border-gray-800  text-white transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-white before:transition-transform before:duration-500 before:content-[''] hover:text-black before:hover:scale-x-100">
+            overflow-hidden relative border-2 border-gray-800  text-white transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-[#0093f0] before:transition-transform before:duration-500 before:content-[''] before:hover:scale-x-100">
                     <h3>Explore More</h3>
                 </div>
                 <!-- <div class="categoriesCTA text-md mt-2 mb-5 bg-transparent px-4 py-6 flex font-normal items-center text-center uppercase rounded-full lg:text-3xl  lg:px-6 lg:py-4
@@ -156,7 +120,8 @@
         <div id="sec3" class="sec3 w-full h-full">
             <div class="relative overflow-hidden flex justify-center">
                 <div class="viewpot w-full">
-                    <spline-viewer class="scale-100"  url="https://prod.spline.design/O6d0X8HdV79m4tlC/scene.splinecode"></spline-viewer>
+                    <spline-viewer class="scale-100"
+                        url="https://prod.spline.design/O6d0X8HdV79m4tlC/scene.splinecode"></spline-viewer>
                 </div>
                 <span class="absolute top-1/2 left-2/3">Speed</span>
             </div>
