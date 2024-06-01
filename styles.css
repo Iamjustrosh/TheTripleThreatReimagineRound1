@@ -137,14 +137,20 @@ body[theme="white"]{
     font-size: 1em;
 }
 
-.navbar #center a{
+.navbar #center,.right a{
     font-size: medium;
     text-underline-offset: 10px;
     text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;
 }
 
-#center a:hover{
+#center i,a:hover{
     text-decoration: underline;
+}
+
+.navbar .right i{
+    font-size: medium;
+    text-underline-offset: 10px;
+    text-shadow: rgba(255, 255, 255, 0.837) 1px 0 10px;
 }
 
 .searchBox{
