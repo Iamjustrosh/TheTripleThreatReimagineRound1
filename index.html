@@ -28,31 +28,31 @@
 
         <!-- Navbar started -->
         <nav class="navbar z-10 p-3 flex bg-transparent justify-between items-center">
-            
-                <a href="#" id="logo" class="flex gap-2 items-center">
-                    <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
-                </a>
-                <div id="center" class="hidden md:flex gap-12">
-                    <a href=""> Vehicles </a>
-                    <a href=""> Shop </a>
-                    <a href=""> Support & Services </a>
-                    <a href=""> Help </a>
+
+            <a href="#" id="logo" class="flex gap-2 items-center">
+                <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
+            </a>
+            <div id="center" class="hidden md:flex gap-12">
+                <a href=""> Vehicles </a>
+                <a href=""> Shop </a>
+                <a href=""> Support & Services </a>
+                <a href=""> Help </a>
+            </div>
+            <div class="right hidden md:flex md:justify-center md:items-center gap-2">
+                <i class="ri-user-fill "></i>
+                <a href="#"> <i class="ri-global-fill"></i> </a>
+                <div class="searchBox">
+                    <input type="text" placeholder="Search Your Vehicle">
+                    <a href="#">
+                        <i class="searchbtn ri-search-line"></i>
+                    </a>
                 </div>
-                <div class="right hidden md:flex md:justify-center md:items-center gap-2">
-                    <i class="ri-user-fill "></i>
-                    <a href="#"> <i class="ri-global-fill"></i> </a>
-                    <div class="searchBox">
-                        <input type="text" placeholder="Search Your Vehicle">
-                        <a href="#">
-                            <i class="searchbtn ri-search-line"></i>
-                        </a>
-                    </div>
-                </div>
-            
-                <button class="p-2 md:hidden" onclick="handleMenu()">
-                    <i class="ri-menu-line"></i>
-                </button>
-           
+            </div>
+
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="ri-menu-line"></i>
+            </button>
+
             <div id="nav-dialog" class="fixed md:hidden hidden bg-black inset-0 ">
                 <div id="nav-bar" class="flex justify-between p-3">
                     <a href="#" id="logo" class="flex gap-2 items-center">
@@ -111,26 +111,77 @@
             </div>
         </div>
 
-        <div class="sec2 w-full h-full mb-10">
-            <div id="categories" class="categorySection flex justify-center items-center text-center flex-col">
-                <div class="categoriesHeading relative w-fit text-xl font-bold lg:text-6xl">
+        <div id="sec2">
+
+        </div>
+
+        <div id="sec_thrill" class="w-full h-full mb-10">
+            <div id="categories" class="categorySection flex justify-start items-center pt-10 flex-col">
+                <div class="categoriesHeading relative w-full px-10 break-words text-3xl font-bold lg:text-6xl">
                     <h1 class="catHead">Thrilling. Liberating. Hardworking. Iconic.</h1>
                 </div>
+
                 <div
-                    class="category text-2xl lg:text-3xl mt-10 py-10 flex flex-wrap flex-col lg:flex-row flex-shrink-0 gap-10 px-10">
-                    <div
-                        class="categoryCard font-bold w-[18rem] h-[13rem] lg:w-[30rem] lg:h-[22rem] relative rounded-xl overflow-hidden  ">
-                        <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[5]">
+                    class="category w-full py-10 flex flex-wrap items-center justify-start md:justify-evenly gap-7 px-10">
+                    <div id="mustang" class="outerCard max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="categoryCard relative rounded-xl overflow-hidden bg-white">
+                            <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[6]">
+                            </div>
+                            <div class="cardImg scale-[1.2] w-full">
+                                <img src="./images/car.png" alt="Mustang">
+                            </div>
+                            <div
+                                class="cardTitle text-xl font-semibold lg:text-3xl lg:font-bold flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
+                                <h2 class="uppercase ">Mustang</h2>
+                                <i class="ri-arrow-right-circle-line"></i>
+                            </div>
                         </div>
-                        <div class="cardImg relative scale-[1.2] w-full h-full">
-                            <img class="absolute h-full " src="./images/image car.png" alt="Mustang">
-                        </div>
-                        <div class="cardTitle flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
-                            <h2 class="uppercase ">Mustang</h2>
-                            <i class="ri-arrow-right-circle-line"></i>
+                        <div
+                            class="cardDescription break-words p-3 text-xl lg:text-2xl font-medium font-[Fregular] w-full tracking-tight leading-tight ">
+                            <h3>Raising heart rates for 60 years. Tailor the perfect Mustang for you, whether it's a
+                                workday or track day.</h3>
                         </div>
                     </div>
-                    <div
+                    <div id="bronco" class="outerCard max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="categoryCard relative rounded-xl overflow-hidden bg-white">
+                            <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[6]">
+                            </div>
+                            <div class="cardImg scale-[1.2] w-full ">
+                                <img class="object-cover" style="object-position: 1rem 0.5rem;"
+                                    src="./images/image suv.png" alt="Bronco">
+                            </div>
+                            <div
+                                class="cardTitle text-xl font-semibold lg:text-3xl lg:font-bold flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
+                                <h2 class="uppercase ">Bronco</h2>
+                                <i class="ri-arrow-right-circle-line"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="cardDescription break-words p-3 text-xl lg:text-2xl font-medium font-[Fregular] w-full tracking-tight leading-tight ">
+                            <h3>The trail awaits. So take off the doors, strap in, and unleash the SUV that's synonymous
+                                with adventure.</h3>
+                        </div>
+                    </div>
+                    <div id="f-150" class="outerCard max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        <div class="categoryCard relative rounded-xl overflow-hidden bg-white">
+                            <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[6]">
+                            </div>
+                            <div class="cardImg scale-[1.2] w-full">
+                                <img src="./images/image truck.png" alt="F-150">
+                            </div>
+                            <div
+                                class="cardTitle text-xl font-semibold lg:text-3xl lg:font-bold flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
+                                <h2 class="uppercase ">F-150</h2>
+                                <i class="ri-arrow-right-circle-line"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="cardDescription break-words p-3 text-xl lg:text-2xl font-medium font-[Fregular] w-full tracking-tight leading-tight ">
+                            <h3>If there's work to be done or weekend fun to be had, just look around. A Ford F-150
+                                truck is probably there.</h3>
+                        </div>
+                    </div>
+                    <!-- <div
                         class="categoryCard font-bold w-[18rem] h-[13rem] lg:w-[30rem] lg:h-[22rem] relative rounded-xl overflow-hidden ">
                         <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[5]">
                         </div>
@@ -155,12 +206,13 @@
                             <h2 class="uppercase ">F-150</h2>
                             <i class="ri-arrow-right-circle-line"></i>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
+
                 <div
                     class="categoriesCTA text-lg mt-2 mb-5 bg-transparent px-4 py-2 font-medium uppercase rounded-full lg:text-3xl lg:font-normal lg:px-6 lg:py-4
-            overflow-hidden relative border-2 border-gray-800  text-white transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-[#0093f0] before:transition-transform before:duration-500 before:content-[''] before:hover:scale-x-100">
+            overflow-hidden relative border-2 border-gray-800  text-white transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:opacity-0 before:bg-[#0093f0] before:transition-opacity before:duration-300 before:ease-in before:content-[''] before:hover:opacity-100">
                     <h3>Explore More</h3>
                 </div>
             </div>
@@ -210,7 +262,8 @@
         </div>
 
 
-        <a href="#" title="Go To Top" class="to-top  bg-white fixed bottom-5 right-5 w-[40px] h-[40px] flex items-center justify-center">
+        <a href="#" title="Go To Top"
+            class="to-top  bg-white fixed bottom-5 right-5 w-[40px] h-[40px] flex items-center justify-center">
             <i class="ri-arrow-up-line text-black"></i>
         </a>
 

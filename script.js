@@ -106,6 +106,20 @@ function cursor() {
 
 
 function categoryAnimation(){
+  let staggerValue;
+
+  if (window.innerWidth < 640) {
+      staggerValue = 0.5; // For small screens
+  } else if (window.innerWidth < 768) {
+      staggerValue = 0.3; // For medium screens
+  } else if (window.innerWidth < 1024) {
+      staggerValue = 0.1; // For large screens
+  } else {
+      staggerValue = 0.01; // For extra-large screens
+  }
+
+
+
   gsap.from(".categoriesHeading",{
     scrollTrigger:{
         trigger:".category",
@@ -114,7 +128,7 @@ function categoryAnimation(){
     },
     y:20,
     opacity:0,
-    duration:2,
+    duration: 1,
     ease: "power4.out",
   })
   gsap.from(".categoryCard",{
@@ -138,6 +152,18 @@ function categoryAnimation(){
     },
     y: 50,
     opacity: 0,
+    ease: "power4.out",
+  })
+
+  gsap.from(".cardDescription",{
+    scrollTrigger:{
+        trigger:".outerCard",
+        start: "top 60%",
+        scrub: 1,
+    },
+    stagger: staggerValue,
+    x:-20,
+    opacity:0,
     ease: "power4.out",
   })
 }
