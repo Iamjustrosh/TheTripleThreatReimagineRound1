@@ -41,6 +41,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    scroll-behavior:smooth;
 }
 body[theme="black"]{
     background-color: black;
@@ -242,12 +243,17 @@ body[theme="white"]{
 
 */
 
+.footersection a{
+    text-decoration: none;
+}
+
 .to-top{
     border-radius: 50%;
     text-decoration: none;
     opacity: 1;
     pointer-events: pointer;
-    transition: all .4s;
+    /* transition: all 10s ease-in-out; */
+    box-shadow: 0 0 10px rgba(172, 160, 160, 0.5);
 }
 
 /* .to-top.active{
