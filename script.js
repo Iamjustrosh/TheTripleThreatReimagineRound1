@@ -134,7 +134,6 @@ function categoryAnimation() {
   gsap.from(".categoryCard", {
     scrollTrigger: {
       trigger: ".categoryCard",
-      markers:true,
       start: "top 65%",
       end: "top 20%",
       scrub: 2,
@@ -186,17 +185,37 @@ function carDetails() {
 }
 
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+function slider(){
+  gsap.to(".slide",{
+    scrollTrigger:{
+      trigger: ".horizontalScroll", 
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 2
+    },
+    xPercent: -410,
+  })
+}
 
 
-const totop = document.querySelector(".to-top");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    totop.classList.add("active");
-  } else {
-    totop.classList.remove("active");
-  }
-});
+function others(){
+
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+  const totop = document.querySelector(".to-top");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      totop.classList.add("active");
+    } else {
+      totop.classList.remove("active");
+    }
+  });
+  
+  
+  
+}
+
 
 const navDialog = document.getElementById("nav-dialog");
 function handleMenu() {
@@ -204,23 +223,25 @@ function handleMenu() {
 }
 
 
-var video = document.querySelector('.hoverVideo');
-var startTime = 1; 
-
-video.addEventListener('loadedmetadata', () => {
-    video.currentTime = startTime;
-});
-
-video.addEventListener('mouseenter', function (dets) {
-  video.play();
-  video.style.opacity = 1;
+function videoAnimation(){
+  
+  var video = document.querySelector('.hoverVideo');
+  var startTime = 1; 
+  
+  video.addEventListener('loadedmetadata', () => {
+      video.currentTime = startTime;
   });
   
-  video.addEventListener('mouseleave', function (dets) {
-    video.pause();
-    video.style.opacity = 0.6;
-});
-
+  video.addEventListener('mouseenter', function (dets) {
+    video.play();
+    video.style.opacity = 1;
+    });
+    
+    video.addEventListener('mouseleave', function (dets) {
+      video.pause();
+      video.style.opacity = 0.6;
+  });
+}
 // Locomotive not working because of activating smooth scroll in css and having spline scroll object
 // (function () {
 //   const locomotiveScroll = new LocomotiveScroll();
@@ -228,8 +249,11 @@ video.addEventListener('mouseenter', function (dets) {
 
 
 loaderAnimation();
+others();
 categoryAnimation();
 cursor();
-carDetails()
+carDetails();
+slider();
+videoAnimation();
 
 
